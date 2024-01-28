@@ -282,7 +282,7 @@ TODO:
     .VINE-UIE-dimmed-tile:hover { opacity: 1; }`,
       //Settings
       `.VINE-UIE-open-settings-btn {
-      ${thorStyles.mobile ? "width: 50px;" : `position:absolute; right: 0; bottom: ${userPreferences.stickyTopBar ? "1px" : "-20px"};`}
+      ${thorStyles.mobile ? "width: 50px;" : `position:absolute; right: 0; bottom: ${userPreferences.stickyTopBar ? "1px" : "45px"};background-color:${bodyTextColor};`}
     }
     .VINE-UIE-open-settings-btn .a-btn-text{padding: 0 6px;}
     #VINE-UIE-settings-dialog h1{padding:0;}
