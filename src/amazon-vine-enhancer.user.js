@@ -56,7 +56,7 @@ TODO:
   //Grab the body BG color in case any custom themes are applied to the site
   const bodyStyles = getComputedStyle(document.body);
   const bodyBgColor = bodyStyles.backgroundColor;
-  const bodyTextColor = bodyStyles.color;
+  const bodyTextColor = '#C7C7C7';
 
   //grab the border color, style, and size
   const border = getComputedStyle($('[data-a-name="vine-items"]')).border;
@@ -65,6 +65,7 @@ TODO:
   GM_addStyle(`
   .VINE-UIE-dialog{
     width: 530px;
+
     background-color: ${bodyBgColor};
     color: ${bodyTextColor};
   }
@@ -299,6 +300,7 @@ TODO:
       height: 150px;
       border: 1px solid #EEE;
       background-color: ${bodyBgColor};
+      color: ${bodyTextColor};
     }
     #VINE-UIE-word-list-display li{padding: 2px;}
     #VINE-UIE-word-list-display li:nth-child(odd) {background-color: rgba(128, 128, 128, 0.1);}
@@ -430,9 +432,14 @@ TODO:
       filter: saturate(50%);
     }
     .VINE-UIE-etv-display{
-      font-size: 12px;
-      margin: 0 !important;
-    }`,
+    font-size: 12px;
+    color: #101073;
+    margin: 0 !important;
+    background: yellow !important;
+    border: 3px outset mediumblue;
+    outline: 1px solid gold;
+    border-radius:15%;
+  }`,
       ];
 
       if (thorStyles.smallItems || thorStyles.mobile) {
